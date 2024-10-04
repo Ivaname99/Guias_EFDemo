@@ -24,5 +24,12 @@ namespace EFDemo
             var cliente = cr.ObtenerTodos();
             dgvCustomers.DataSource = cliente;
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            var cliente = cr.ObtenerTodos(tbxObtenerTodos.Text);
+            List<Customers> lista1 = new List<Customers>{cliente};
+            dgvCustomers.DataSource = lista1;
+        }
     }
 }
