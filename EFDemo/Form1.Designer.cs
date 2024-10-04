@@ -49,6 +49,7 @@
             this.btnObtenerTodos.TabIndex = 1;
             this.btnObtenerTodos.Text = "ObtenerTodos";
             this.btnObtenerTodos.UseVisualStyleBackColor = true;
+            this.btnObtenerTodos.Click += new System.EventHandler(this.btnObtenerTodos_Click);
             // 
             // Form1
             // 
